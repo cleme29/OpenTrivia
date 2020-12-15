@@ -1,6 +1,18 @@
 # OpenTrivia
 Small multiplayer quiz demo using express and socket.io in the backend and React for the UI. [Click Here](https://opentrivia.herokuapp.com/) to view the live demo. 
 
+# To-Do
+
+- Ajout timer
+- Changement clic sur réponse à toggle (attente timer)
+- db question
+
+# Amelioration
+
+- multiple types question (audio, video, qcm, question libre)
+- interface utilisateur ajout question
+- l'admin choisi les réponses (ou alors case à cocher dans option game pour faire à la vox populi ?)
+
 ### How to use locally:
 
 * Clone the repository and run the following command to download all dependencies.
