@@ -63,12 +63,12 @@ export class JoinGamePage extends React.Component {
                 <div className="box-layout__box">
                     <Fade>
                         <form className="form" onSubmit={this.submitForm}>
-                            <h1 className={"box-layout__title"}>Join Game</h1>
+                            <h1 className={"box-layout__title"}>Rejoindre la partie</h1>
                             {this.state.error && <p className="form__error">{this.state.error}</p>}
 
                             <input
                                 type="text"
-                                placeholder="Room Name"
+                                placeholder="Nom de la partie"
                                 autoFocus
                                 value={this.state.room}
                                 onChange={this.onRoomChange}
@@ -77,7 +77,7 @@ export class JoinGamePage extends React.Component {
 
                             <input
                                 type="text"
-                                placeholder="User Name"
+                                placeholder="Pseudo"
                                 value={this.state.name}
                                 onChange={this.onNameChange}
                                 className="text-input"
@@ -90,7 +90,7 @@ export class JoinGamePage extends React.Component {
                                 />
                             </div>
 
-                            <button className="button">Join</button>
+                            <button className="button">Joindre</button>
 
 
 

@@ -22,8 +22,8 @@ export class Header extends React.Component {
             <header className={"header"}>
                 <div className={"content-container"}>
                     <div className={"header__content"}>
-                        <button className={"header__title button--link button"} onClick={this.handleClick}><h1>OpenTrivia</h1></button>
-                        <button className="button--link button ">About</button>
+                        <button className={"header__title button--link button"} onClick={this.handleClick}><h1>F-Culture</h1></button>
+                        {/*  <button className="button--link button ">About</button> */}
                     </div>
                 </div>
             </header>

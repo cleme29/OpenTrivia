@@ -70,18 +70,18 @@ export class CreateGamePage extends React.Component {
                 <div className="box-layout__box">
                     <Fade>
                         <form className="form" onSubmit={this.submitForm}>
-                            <h1 className={"box-layout__title"}>Create New Game</h1>
+                            <h1 className={"box-layout__title"}>Créer une nouvelle partie</h1>
                             {this.state.error && <p className="form__error">{this.state.error}</p>}
                             <input
                                 type="text"
-                                placeholder="Room Name"
+                                placeholder="Nom de la partie"
                                 autoFocus
                                 value={this.state.room}
                                 onChange={this.onRoomChange}
                                 className="text-input"
                             />
                             <select className="select" value={this.state.category} onChange={this.onCategoryChange}>
-                                <option key={"0"} value={"0"}>Any Categories</option>
+                                <option key={"0"} value={"0"}>Toutes les catégories</option>
                                 {
                                     this.props.categories.map((category) => {
                                         return <option key={category.id} value={category.id}>{category.name}</option>
@@ -89,17 +89,17 @@ export class CreateGamePage extends React.Component {
                                 }
                             </select>
                             <select className="select" value={this.state.difficulty} onChange={this.onDifficultyChange}>
-                                <option key={"any"} value={"any"}>Any Difficulty</option>
-                                <option key="easy" value="easy">Easy</option>
-                                <option key="medium" value="medium">Medium</option>
-                                <option key="hard" value="hard">Hard</option>
+                                <option key={"any"} value={"any"}>Toutes les difficultées</option>
+                                <option key="easy" value="easy">t tro nul</option>
+                                <option key="medium" value="medium">bof</option>
+                                <option key="hard" value="hard">tro komplik</option>
                             </select>
                             <select className="select" value={this.state.questionCount} onChange={this.onCountChange}>
-                                <option key="5" value="5">5 Questions</option>
-                                <option key="10" value="10">10 Questions</option>
-                                <option key="15" value="15">15 Questions</option>
+                                <option key="5" value="5">5 questions</option>
+                                <option key="10" value="10">10 questions</option>
+                                <option key="15" value="15">15 questions</option>
                             </select>
-                            <button className="button">Create</button>
+                            <button className="button">Créer</button>
 
                         </form>
                     </Fade>

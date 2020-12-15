@@ -15,11 +15,11 @@ export class QuestionPage extends React.Component {
         const ans = e.target.value;
         socket.emit("submitAnswer", ans, (res) => {
 
-            if (res.code === "correct") {
-                this.props.setMessage(`Correct. Your score is ${res.score}`);
-            } else if (res.code === "incorrect") {
-                this.props.setMessage(`Incorrect, The correct answer was ${res.correct}. Your score is ${res.score}`);
-            }
+            // if (res.code === "correct") {
+            //     this.props.setMessage(`T'as raison. Your score is ${res.score}`);
+            // } else if (res.code === "incorrect") {
+            //     this.props.setMessage(`Incorrect, The correct answer was ${res.correct}. Your score is ${res.score}`);
+            // }
         });
     };
 
@@ -65,7 +65,7 @@ export class QuestionPage extends React.Component {
                             <div className="scoreboard">
 
                                 <div className="list-item">
-                                    <h3>Player</h3>
+                                    <h3>Joueur</h3>
                                     <h3>Score</h3>
                                 </div>
                                 
@@ -81,7 +81,7 @@ export class QuestionPage extends React.Component {
                                 }
 
                                 <div className="list-button">
-                                    <button className="button" onClick={this.handleReset}>Start Again</button>
+                                    <button className="button" onClick={this.handleReset}>Recommencer</button>
                                 </div>
                             
                             </div>
