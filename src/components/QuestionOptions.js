@@ -1,11 +1,13 @@
 import React from 'react';
+// import Button from 'react-bootstrap/Button';
+
 
 const QuestionOptions = (props) => (
     <div className="question">
         {
             !props.options ? <h3>{props.message}</h3>
                 : props.options.map((option) => {
-                    return <button key={option} value={option} disabled={props.type === "HOST" ? true : false} onClick={props.submitAnswer} className={"question__option"}>{option}</button>
+                    return <button  key={option} value={option} disabled={props.type === "HOST" ? true : false} onClick={props.submitAnswer} className={"question__option"}>{option}</button>
                 })
         }
     </div>

@@ -83,6 +83,8 @@ export class JoinGamePage extends React.Component {
                                 className="text-input"
                             />
 
+                            <h1 className={"box-layout__title"}>Couleur</h1>
+
                             <div className="form__picker">
                                 <HuePicker
                                     color={this.state.colour}
